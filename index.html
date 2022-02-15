@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5c7edfd842.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-title" id="header">TO-DO LIST</h1>
+      <div class="card">
+        <div class="card-header"><strong>New Task</strong></div>
+        <div class="card-body">
+          <form action="#" id="add-task-form">
+            <div class="input-group-top">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="taskname"
+                  id="task-name"
+                  class="form-task-name"
+                  placeholder="Add a new task"
+                />
+                <div class="input-group">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="btn-add-new-task"
+                  >
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card card-secondary">
+        <div class="card-header">
+          <p class="card-header-p"><strong>Task List</strong></p>
+          <a id="btnDeleteAll" href="#" class="btn delete-all float-right">
+            Delete All
+          </a>
+        </div>
+        <ul id="task-list" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
